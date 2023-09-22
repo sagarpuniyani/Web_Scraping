@@ -7,7 +7,7 @@ import request from "request-promise";
 import cheerio from "cheerio";
 import fs from "fs";
 
-const searchItem = 'laptops';
+const searchItem = 'Samsung machine';
 
 const url = `https://www.flipkart.com/search?q=${searchItem}+&as=on&as-show=on&otracker=AS_Query_HistoryAutoSuggest_1_2_na_na_na&otracker1=AS_Query_HistoryAutoSuggest_1_2_na_na_na&as-pos=1&as-type=HISTORY&suggestionId=laptops+&requestId=901acbb6-82f5-48e9-929b-7bece0a14d3a`;
 
@@ -45,6 +45,4 @@ const url = `https://www.flipkart.com/search?q=${searchItem}+&as=on&as-show=on&o
             console.log(jsonData);
         }
     });
-    
-
 } )();
